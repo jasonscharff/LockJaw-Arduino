@@ -1,5 +1,6 @@
 
 const int pressureSensor = A0;
+const int lockThreshold = 10;
 bool isLocked = false;
 
 void setup() {
@@ -9,3 +10,8 @@ void setup() {
 void loop() {
   Serial.println(analogRead(pressureSensor));
 }
+
+void lock() {
+  
+}
+
